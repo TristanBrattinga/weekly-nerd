@@ -8,9 +8,122 @@
     <title>Weekly Nerd</title>
 </head>
 <body>
-    <main>
-        <h1>Weekly Nerd: Tristan</h1>
-        <p>Test</p>
-    </main>
+<main>
+    <h1>Weekly Nerd: Tristan</h1>
+    <h2>Week 1</h2>
+    <p>Kevin maakt browsers. Hij heeft PolyPane ontwikkeld. Ook heeft hij bijgedragen aan Electron.js. PolyPane is
+        geschreven in JS.
+
+        The rule of least power is een basisprincipe waar op webtechnologie gebouwd zijn. “Choose the least powerful
+        language suitable for a given purpose”. Begin bij de basis. Oftewel begin bij HTML, dan CSS wanneer nodig en dan
+        wanneer echt nodig JS.
+        Mensen die browsers maken zijn meer gaan luisteren naar wat developers willen.
+        De browser kan alles wat jij kan met javascript. Maar toegankelijker en sneller.
+
+        Main take-away kijk eerst wat je kan doen zonder JS.
+
+        Voorbeeld zou zijn een custom toggle. Hier kan je gewoon een checkbox voor gebruiken i.p.v. een listener
+        toevoegen met JS.
+
+        Form elementen en afbeeldingen zijn replaced content. Houdt ruimte vast voor een replaced asset. Form controls
+        worden door OS geleverd en plaatjes als asset die je meegeeft.
+
+        Met appearance: none kan je de basic styling override.
+        Input elementen kunnen in origine geen pseudo elementen hebben, wanneer je appearance: none gebruikt kan dit
+        wel.
+
+        Gebruik de checked pseudo class om te stylen.
+        Focus-visible gebruiken ipv focus
+        Wanneer je geen outline wilt hebben voor muisgebruikers zet dan outline transparent ipv none. Mensen met
+        high-contrast setting kunnen dan alsnog de outline zien.
+
+        "input type=“checkbox” switch" voor safari switch styling. Pseudo classes die hieraan zijn toegevoegd zijn
+        ::thumb en ::track.
+
+        Datalist:
+        Datalist als options voor je input type
+
+        *****Interop*****
+
+        Vroeger werd jQuery gebruikt voor smooth-scrolling, nu gwn een scroll-behaviour: smooth; toevoegen (pas ik
+        altijd toe in mijn websites)
+
+        Voor toegankelijkheid beter een media query geven met prefers-reduced-motion: no-preference
+
+        Voorbeeld:
+
+        @media (prerfers-reduced-motion) {
+        no-preference
+        } {
+        html {
+        scroll-behaviour: smooth
+        }
+        }
+
+        Scroll-margin en scroll-padding werkt hetzelfde als margin en padding, maar dan alleen voor scrolling. Bijv voor
+        een fixed header met scrollen
+
+        :target pseudo class om active state aan te geven van het target
+
+        Adam argyle oh snap css day
+
+        Voor een accordion details met een summary gebruiken.
+
+        ::marker pseudo element gebruiken voor het stylen van het pijltje van een details element
+
+        Geef summary iets van styling mee voor toegankelijkheid
+
+        dialog
+        heeft een beetje JS nodig om een modal te tonen.
+
+        Form methods zijn uitgebreid met method=“dialog”
+
+        Dialog wordt toegevoegd aan de top-layer, dit zit tussen browser en je scherm.
+
+        Dialog background kan je stylen met ::backdrop pseudo class.
+
+        Container queries uitzoeken
+
+        :has selector kan je stijlen adhv andere onderdelen van je pagina. Zijn vergelijkbaar met if else
+
+        Voorbeeld artikel: www.polypane.app/where-is-has
+
+        Als je wil dat een form element meebeweegt met de input value, field-sizing: content gebruiken.
+
+        Grid masonry is coming
+
+        "selectlist" heeft alle semantiek van een select maar is opgebouwd uit losse html elementen.
+
+            Scroll-driven animations
+
+            https://scroll-driven-animations.style/
+    </p>
+    <h2>Week 2</h2>
+    <p>Fenna de Wilde
+
+        Heeft bij Build in Amsterdam gewerkt en werkt nu bij bakken & baeck???
+
+        Phantom heeft zij gebouwd
+
+        Website mammoth website of the year awkward
+
+        Aria-expanded geeft de status weer van de state van het corresponderende element. Wanneer je button een fold out menu controleert regelt deze de aria checked state.
+
+        Aria-live maakt dynamische wijzigingen mogelijk zonder de hele pagina te herladen. Drie waardes:
+        “Off”
+        “Polite”
+        “Assertive”
+
+        Aria live gaat vaak samen met aria atomic, want dit geeft meer context. De screenreader geeft dan de hele waarde weer ipv het resultaat
+
+        Vermijd het gebruik van li elements voor slides binnen een carousel. Als je slides verbergt, zal het aangekondigde aantal li-elements niet overeenkomen met het exacte aantal slides.
+
+        Wanneer dialog niet vanilla werkt vanwege animaties, werken met package
+        react-focus-look
+        React-aria-components
+
+        WAI heeft color contrast formule gemaakt
+    </p>
+</main>
 </body>
 </html>
