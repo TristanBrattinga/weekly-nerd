@@ -10,7 +10,7 @@ export type GetRenderComponentProps<T> = T extends React.ComponentType
 
 export type ButtonRenderComponent = 'a' | 'button' | typeof Link
 
-export type ButtonVariants = 'primary' | 'secondary' | 'dark' | 'white' | 'contact' | 'selected'
+export type ButtonVariants = 'primary' | 'secondary'
 
 export type ButtonProps<T extends ButtonRenderComponent> = {
     as?: ButtonRenderComponent

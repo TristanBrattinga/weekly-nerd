@@ -19,10 +19,6 @@ const Button = <T extends ButtonRenderComponent>({
     const buttonVariants: Record<ButtonVariants, string> = {
         primary: 'btn-primary',
         secondary: 'btn-secondary',
-        dark: 'btn-dark',
-        white: 'btn-white',
-        contact: 'btn-contact',
-        selected: 'btn-selected',
     }
 
     typedProps.className = clsx(
@@ -44,13 +40,7 @@ const Button = <T extends ButtonRenderComponent>({
         }
     }
 
-    return createElement(
-        as,
-        typedProps,
-        <>
-            {children}
-        </>,
-    )
+    return createElement(as, typedProps, <>{children}</>)
 }
 
 export default Button

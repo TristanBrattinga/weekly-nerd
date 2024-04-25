@@ -18,3 +18,13 @@ export const primary = () => {
         </div>
     )
 }
+
+export const secondary = () => {
+    return (
+        <div className="m-10">
+            <Button as={Link} href="/" variant="secondary">
+                Free Discovery Session
+            </Button>
+        </div>
+    )
+}
