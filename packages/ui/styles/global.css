@@ -8,6 +8,6 @@
     }
 
     .btn-primary {
-        @apply  text-white border border-transparent bg-blue900new hover:bg-transparent hover:border-[1px] hover:border-blue900new hover:text-blue900new dark:hover:text-white dark:hover:border-white/50
+        @apply text-white border border-transparent hover:bg-transparent hover:border-[1px] dark:hover:text-white dark:hover:border-white/50
     }
 }
