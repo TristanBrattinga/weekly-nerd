@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .btn {
+        @apply flex items-center [&>*]:shrink-0 select-none [&>*]:mr-1.5 rounded-full leading-none text-sm px-[22px] py-[14px] border text-center transition w-fit
+    }
+
+    .btn-primary {
+        @apply text-white border border-transparent hover:bg-transparent hover:border-[1px] dark:hover:text-white dark:hover:border-white/50
+    }
+}
