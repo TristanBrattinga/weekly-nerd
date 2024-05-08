@@ -10,16 +10,16 @@ export default meta
 
 export const primary = () => {
     return (
-        <div className="max-w-2xl">
-            <Card
-                title={'Polypane'}
-                lecturer="Kilian Valkhof"
-                description={'Lorem ipsum'}
-                image={{
-                    src: '/images/stock.jpg',
-                    alt: '',
-                }}
-            />
-        </div>
+        <Card
+            title={'Polypane'}
+            lecturer="Kilian Valkhof"
+            description="Kilian's hoofd onderwerp was hoe we steeds minder JavaScript nodig hebben en hoe er steeds
+                meer mogelijk is met alleen HTML en CSS. Kilian vertelt over zijn eigen browser Polypane en Electron.js"
+            image={{
+                src: '/images/stock.jpg',
+                alt: '',
+            }}
+            link={{ link: '/talks/polypane', label: 'Polypane' }}
+        />
     )
 }

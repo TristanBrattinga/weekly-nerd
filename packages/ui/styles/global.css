@@ -3,12 +3,28 @@
 @tailwind utilities;
 
 @layer base {
+    * {
+        @apply antialiased text-base text-white scroll-smooth
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+        @apply font-nohemi
+    }
+
+    body {
+        @apply bg-grey-base font-inter
+    }
+
+    main {
+        @apply min-h-screen
+    }
+
     .btn {
         @apply flex items-center [&>*]:shrink-0 select-none [&>*]:mr-1.5 rounded-full leading-none text-sm px-[22px] py-[14px] border text-center transition w-fit
     }
 
     .btn-primary {
-        @apply bg-blue-700 text-white
+        @apply bg-blue-700 text-white border-transparent hover:border-blue-700 hover:bg-transparent
     }
 
     .btn-secondary {

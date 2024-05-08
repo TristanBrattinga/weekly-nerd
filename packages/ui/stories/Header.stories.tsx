@@ -13,9 +13,9 @@ export const primary = () => {
     return (
         <Header
             links={[
+                { link: '/', label: 'Home' },
                 { link: '/talks', label: 'Talks' },
-                { link: '/talks', label: 'Talks' },
-                { link: '/talks', label: 'Talks' },
+                { link: '/projects', label: 'Project' },
             ]}
         />
     )
