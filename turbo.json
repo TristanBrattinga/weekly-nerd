@@ -33,16 +33,7 @@
     "dev": {
       "cache": false
     },
-    "dev:admin": {
-      "cache": false
-    },
-    "docker:up": {
-      "cache": false
-    },
     "start": {
-      "cache": false
-    },
-    "start:admin": {
       "cache": false
     },
     "storybook": {
