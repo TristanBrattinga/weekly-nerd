@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "Inter";
+    font-style: normal;
+    font-display: swap;
+    src: url("../static/fonts/Inter-VariableFont.ttf") format("truetype");
+}
+
+:root {
+    --font-inter: "Inter";
+}

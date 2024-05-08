@@ -1,6 +1,7 @@
 import * as React from 'react'
 import '../styles/global.css'
 import { Preview } from '@storybook/react'
+import { inter, nohemi } from 'web/src/lib/fonts'
 
 const preview: Preview = {
     parameters: {
@@ -30,7 +31,9 @@ const preview: Preview = {
     },
     decorators: [
         Story => (
-<Story />
+            <div className={`${nohemi.variable} ${inter.variable}`}>
+                <Story />
+            </div>
         ),
     ],
 }

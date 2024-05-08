@@ -1,5 +1,5 @@
 /** @type {import('tailwindcss').Config} */
-const { fontFamily } = require('tailwindcss/defaultTheme')
+const { fontFamily, screens } = require('tailwindcss/defaultTheme')
 
 module.exports = {
     safelist: ['swiper-slide'],
@@ -10,10 +10,25 @@ module.exports = {
     darkMode: 'class',
     theme: {
         container: {
+            screens: {
+                ...screens,
+                xl: '1440px',
+            },
             center: true,
             padding: '20px',
+        },
+        extend: {
             screens: {
+                lg: '1200px',
                 xl: '1440px',
+            },
+
+            colors: {
+                'grey-base': '#202124',
+            },
+            fontFamily: {
+                nohemi: ['var(--font-nohemi)', ...fontFamily.sans],
+                inter: ['var(--font-inter)', ...fontFamily.sans],
             },
         },
     },
