@@ -1,17 +1,17 @@
-import CardList from '../components/CardList'
+import PostList from '../components/PostList'
 
 import type { Meta } from '@storybook/react'
 
-const meta: Meta<typeof CardList> = {
-    title: 'Components/CardList',
-    component: CardList,
+const meta: Meta<typeof PostList> = {
+    title: 'Components/PostList',
+    component: PostList,
 }
 export default meta
 
 export const primary = () => {
     return (
-        <CardList
-            cards={[
+        <PostList
+            posts={[
                 {
                     title: 'Polypane',
                     lecturer: 'Kilian Valkhof',

@@ -1,3 +1,5 @@
+const { withContentlayer } = require('next-contentlayer2')
+
 const securityHeaders = [
     {
         key: 'X-Content-Type-Options',
@@ -15,6 +17,8 @@ const securityHeaders = [
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+    reactStrictMode: true,
+    swcMinify: true,
     transpilePackages: ['ui'],
     async headers() {
         return [
@@ -27,4 +31,4 @@ const nextConfig = {
     },
 }
 
-module.exports = nextConfig
+module.exports = withContentlayer(nextConfig)

@@ -134,3 +134,6 @@ install-state.gz
 
 
 .idea/workspace.xml
+
+# contentlayer2
+.contentlayer
