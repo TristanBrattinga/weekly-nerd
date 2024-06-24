@@ -25,6 +25,7 @@ module.exports = {
 
             colors: {
                 'grey-base': '#202124',
+                accent: '#5ba7c2',
             },
             fontFamily: {
                 nohemi: ['var(--font-nohemi)', ...fontFamily.sans],
