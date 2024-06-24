@@ -1,7 +1,7 @@
 ---
-title: Kunst
+title: Kunst met Code
 lecturer: Jeffrey Arts
-date: 28-2-2024
+date: 28-02-2024
 image: /images/jeffrey.jpeg
 ---
 

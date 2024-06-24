@@ -1,7 +1,7 @@
 ---
 title: Kunst met CSS
 lecturer: Julia Miocene
-date: 1-1-2024
+date: 18-03-2024
 image: /images/julia.jpg
 ---
 

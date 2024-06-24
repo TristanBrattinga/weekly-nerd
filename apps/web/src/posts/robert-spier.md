@@ -1,7 +1,7 @@
 ---
 title: Aan het werk, wat nu?
 lecturer: Robert Spier
-date: 12-1-2020
+date: 15-05-2024
 image: /images/robert.jpeg
 ---
 

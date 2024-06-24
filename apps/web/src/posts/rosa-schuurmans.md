@@ -1,7 +1,7 @@
 ---
 title: Creative Coding
 lecturer: Rosa Schuurmans
-date: 12-1-2020
+date: 10-04-2024
 image: /images/rosa.jpg
 ---
 

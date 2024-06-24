@@ -14,16 +14,16 @@ const Post = ({ post }: PostProps) => {
         <Link
             href={`/posts/${post._raw.flattenedPath}`}
             className={clsx(
-                'flex border rounded-3xl overflow-hidden focus-visible:scale-105 hover:scale-105 transition-all duration-300 h-full',
+                'flex border rounded-3xl overflow-hidden focus-visible:scale-105 hover:scale-105 transition-all duration-300 ',
                 {
-                    'flex-col': gridView,
-                    'flex-row': !gridView,
+                    'flex-col h-80': gridView,
+                    'flex-row h-60': !gridView,
                 },
             )}
         >
             <div
                 className={clsx('', {
-                    'w-full': gridView,
+                    'w-full h-1/2': gridView,
                     'w-1/3': !gridView,
                 })}
             >

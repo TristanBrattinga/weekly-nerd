@@ -2,7 +2,7 @@
 title: Polypane
 lecturer: Kilian Valkhof
 date: 7-2-2024
-image: /images/electron.png
+image: /images/polypane.jpeg
 ---
 
 ### Samenvatting

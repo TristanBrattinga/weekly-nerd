@@ -16,12 +16,9 @@ const PostLayout = ({ params }: { params: { slug: string } }) => {
     if (!post) throw new Error(`Post not found for slug: ${params.slug}`)
 
     return (
-        <section className="container flex justify-center gap-10 my-12 lg:my-24">
-            <Sidebar post={post} />
-            <section className="max-w-2xl">
-                <PostHeader post={post} />
-                <PostContent post={post} />
-            </section>
+        <section className="container md:max-w-2xl gap-10 my-12 lg:my-24">
+            <PostHeader post={post} />
+            <PostContent post={post} />
         </section>
     )
 }
